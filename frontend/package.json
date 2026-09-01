@@ -1,3 +1,4 @@
+
 {
   "name": "embroidery-platform-frontend",
   "private": true,
@@ -20,10 +21,10 @@
   "devDependencies": {
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
+    "@vitejs/plugin-react": "^4.7.0",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.9",
-    "vite": "^8.2.2"
+    "vite": "^7.3.6"
   }
 }
