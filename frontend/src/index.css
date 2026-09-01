@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1, h2, h3, h4 {
+    @apply font-display text-ink;
+  }
+
+  :focus-visible {
+    outline: 2px solid #0B5D3B;
+    outline-offset: 2px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* The signature "running stitch" divider — a dashed thread line used
+     sparingly under hero headlines and section labels. */
+  .stitch-rule {
+    height: 1px;
+    background-image: repeating-linear-gradient(
+      90deg,
+      theme('colors.thread') 0,
+      theme('colors.thread') 6px,
+      transparent 6px,
+      transparent 12px
+    );
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-brand px-5 py-3 text-sm font-semibold text-white shadow-card transition-colors hover:bg-brand-forest focus-visible:outline-brand disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-brand/20 bg-white px-5 py-3 text-sm font-semibold text-brand transition-colors hover:bg-brand-mist disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .input-field {
+    @apply w-full rounded-xl border border-line bg-white px-4 py-3 text-sm text-ink placeholder:text-ink/40 transition-colors focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/15;
+  }
+
+  .card-surface {
+    @apply rounded-2xl border border-line bg-white shadow-card;
+  }
+}

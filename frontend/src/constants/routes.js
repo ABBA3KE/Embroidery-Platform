@@ -1,0 +1,23 @@
+export const ROUTES = {
+  HOME: '/',
+  GALLERY: '/designs',
+  DESIGN_DETAILS: '/designs/:slug',
+  CATEGORIES: '/categories',
+  REPAIR_SERVICE: '/repair-service',
+  CUSTOM_DESIGN: '/custom-design',
+  ABOUT: '/about',
+  CONTACT: '/contact',
+  LOGIN: '/login',
+  REGISTER: '/register',
+  FORGOT_PASSWORD: '/forgot-password',
+  RESET_PASSWORD: '/reset-password',
+
+  CUSTOMER_DASHBOARD: '/dashboard',
+  MY_PURCHASES: '/dashboard/purchases',
+  MY_REPAIRS: '/dashboard/repairs',
+  MY_CUSTOM_DESIGNS: '/dashboard/custom-designs',
+  SETTINGS: '/dashboard/settings',
+  PAYMENT_CALLBACK: '/payment/callback',
+  CUSTOM_DESIGN_PAYMENT_CALLBACK: '/custom-design-payment/callback',
+  ADMIN_DASHBOARD: '/admin',
+};

@@ -1,0 +1,18 @@
+@"
+node_modules/
+.env
+.env.local
+dist/
+build/
+*.log
+.DS_Store
+backend/src/uploads/*
+!backend/src/uploads/.gitkeep
+backend/src/storage/design-files/emb/*
+backend/src/storage/design-files/emx/*
+backend/src/storage/design-files/png/*
+backend/src/storage/design-files/dst/*
+backend/src/storage/custom-designs/references/*
+backend/src/storage/custom-designs/completed/*
+!backend/src/storage/**/.gitkeep
+"@ | Set-Content .gitignore
